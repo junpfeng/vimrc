@@ -68,8 +68,32 @@ call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " extensions coc config
 let g:coc_global_extensions = [
-            \ 'coc-json', 
-            \ 'coc-vimlsp']
+	\ 'coc-clangd',
+	\ 'coc-actions',
+	\ 'coc-diagnostic',
+	\ 'coc-explorer',
+	\ 'coc-flutter-tools',
+	\ 'coc-gitignore',
+	\ 'coc-html',
+	\ 'coc-json',
+	\ 'coc-lists',
+	\ 'coc-prettier',
+	\ 'coc-pyright',
+	\ 'coc-python',
+	\ 'coc-snippets',
+	\ 'coc-sourcekit',
+	\ 'coc-stylelint',
+	\ 'coc-syntax',
+	\ 'coc-tasks',
+	\ 'coc-todolist',
+	\ 'coc-translator',
+   	\ 'coc-tslint-plugin',
+	\ 'coc-tsserver',
+	\ 'coc-vetur',
+	\ 'coc-vimlsp',
+	\ 'coc-yaml',
+	\ 'coc-yank']
+
 
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -243,7 +267,9 @@ set tabstop=4
 " 启用tab
 set expandtab
 set autoindent
-" 显示行号
+"" 显示行号
 set nu
-" 设置 backspace 为删除键
+"" 设置 backspace 为删除键
 set backspace=2
+"
+
